@@ -1,9 +1,7 @@
-import { Showtime } from '../models/showtime';
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 // import mockData from './mock-data.json';
-import { Database } from '../models/database';
-import { ShowtimeDate } from '../models/showtime-date';
+import { Database, ShowtimeDate } from 'ticket-booking-library';
 
 @Injectable({
   providedIn: 'root'

@@ -1,9 +1,8 @@
-import { ShowtimeDate } from '../models/showtime-date';
+import { ShowtimeDate } from 'ticket-booking-library';
 import { Observable, of } from 'rxjs';
-import { map, catchError, switchMap, concatMap } from 'rxjs/operators';
+import { map, catchError, concatMap } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { Movie } from '../models/movie';
-import { Showtime } from '../models/showtime';
+import { Movie, Showtime } from 'ticket-booking-library';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
