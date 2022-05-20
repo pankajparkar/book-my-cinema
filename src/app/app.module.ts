@@ -14,12 +14,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { MoviesSliderComponent } from './components/movies-slider/movies-slider.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { CollectionComponent } from './components/collection/collection.component';
-import { ManageShowtimesComponent } from './components/manage-showtimes/manage-showtimes.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { VerticalBarChartComponent } from './components/charts/vertical-bar-chart/vertical-bar-chart.component';
-import { NumberChartComponent } from './components/charts/number-chart/number-chart.component';
 
 import { SharedModule, PipesModule } from 'ticket-booking-library'
 
@@ -30,17 +25,11 @@ import { SharedModule, PipesModule } from 'ticket-booking-library'
     HomeComponent,
     MoviesListComponent,
     MoviesSliderComponent,
-    DashboardComponent,
-    CollectionComponent,
-    ManageShowtimesComponent,
-    VerticalBarChartComponent,
-    NumberChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ModalModule.forRoot(),
-    // TicketBookingLibraryModule,
     SharedModule,
     PipesModule,
     HttpClientModule,
