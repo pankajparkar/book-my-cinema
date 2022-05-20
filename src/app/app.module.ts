@@ -20,8 +20,8 @@ import { ManageShowtimesComponent } from './components/manage-showtimes/manage-s
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { VerticalBarChartComponent } from './components/charts/vertical-bar-chart/vertical-bar-chart.component';
 import { NumberChartComponent } from './components/charts/number-chart/number-chart.component';
-import { SharedModule } from './shared/shared.module';
-import { PipesModule } from './pipes/pipes.module';
+
+import { SharedModule, PipesModule } from 'ticket-booking-library'
 
 @NgModule({
   declarations: [
@@ -40,6 +40,7 @@ import { PipesModule } from './pipes/pipes.module';
     BrowserModule,
     AppRoutingModule,
     ModalModule.forRoot(),
+    // TicketBookingLibraryModule,
     SharedModule,
     PipesModule,
     HttpClientModule,
